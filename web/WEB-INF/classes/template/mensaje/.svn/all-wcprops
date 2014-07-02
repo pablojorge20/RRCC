@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/RRCC/!svn/ver/9/fuentes/web/WebRRCC/web/WEB-INF/classes/template/mensaje
+END
+actionmessage.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/RRCC/!svn/ver/9/fuentes/web/WebRRCC/web/WEB-INF/classes/template/mensaje/actionmessage.ftl
+END
+actionerror.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/RRCC/!svn/ver/9/fuentes/web/WebRRCC/web/WEB-INF/classes/template/mensaje/actionerror.ftl
+END
+styles.css
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/RRCC/!svn/ver/9/fuentes/web/WebRRCC/web/WEB-INF/classes/template/mensaje/styles.css
+END
+theme.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/RRCC/!svn/ver/9/fuentes/web/WebRRCC/web/WEB-INF/classes/template/mensaje/theme.properties
+END

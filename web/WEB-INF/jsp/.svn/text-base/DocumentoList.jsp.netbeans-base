@@ -1,0 +1,73 @@
+<%-- 
+    Document   : DocumentoList
+    Created on : 01-abr-2014, 23:47:46
+    Author     : pmedina
+--%>
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
+<html>
+<head>
+    <title><s:text name="label.tituloMsgCorreos"/></title>
+    <sx:head/>
+</head>
+<body>
+    <div id="content">
+    <div class="post">
+    <div class="post-bgtop">
+    <div class="post-bgbtm">
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s:text name="label.navegacion"/>
+    <strong>
+        <s:text name="naveg.msgCorreo1"/>
+    </strong>
+    <h1 class="title"><s:text name="label.tituloMsgCorreos"/></h1>
+    <div class="entry">        
+        <s:actionerror theme="mensaje" />
+        <s:actionmessage theme="mensaje" />
+
+        <s:form action="msgCorreoFormMant" theme="simple">
+            <s:submit value="%{getText('button.label.nuevo')}" cssClass="boton"/>
+        </s:form>
+
+        <s:form action="msgCorreoFormList" method="post" theme="simple">
+        
+            <table width="720" border="0">
+                <tr>
+                    <td colspan="2"><strong><s:text name="label.resultBusq"/></strong></td>
+                </tr>
+                <tr class="rowH" align="center">
+                    <th width="650"><s:text name="label.nombre"/></th>
+                    <th width="20"></th>
+                </tr>
+                <s:iterator value="msgCorreos" status="status">
+                <tr class="<s:if test="#status.even">rowA</s:if><s:else>rowB</s:else>"
+                    onmouseover="this.className='rowC';"
+                    onmouseout ="this.className='<s:if test="#status.even">rowA</s:if><s:else>rowB</s:else>';" >
+                    <td>
+                        <s:url action="msgCorreoFormMant" id="url" escapeAmp="false">
+                            <s:param name="msgCorreo.id" value="id"/>
+                        </s:url>
+                        <a href="<s:property value="#url"/>">
+                            <s:property value="asunto"/>
+                        </a>
+                    </td>
+                    <td>
+                        <s:url action="msgCorreoFormList!eliminarMsgCorreo" id="url" escapeAmp="false">
+                            <s:param name="msgCorreo.id" value="id"/>
+                        </s:url>
+                        <a href="<s:property value="#url"/>" class="imgLink" onclick="<s:text name="label.confirmacion"/>">
+                            <img src="imagenes/eliminar.png" border="0" title="<s:text name="accion.eliminar"/>"/>
+                        </a>
+                    </td>
+                </tr>
+                </s:iterator>
+            </table>
+        </s:form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
