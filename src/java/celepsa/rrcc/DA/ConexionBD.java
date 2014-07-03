@@ -1,4 +1,4 @@
-package celepsa.rrcc.DB;
+package celepsa.rrcc.DA;
 
 import celepsa.rrcc.encript.Encriptador;
 import java.io.FileInputStream;
@@ -130,7 +130,7 @@ public class ConexionBD {
         if (sentencia != null) // && !sentencia.isClosed())
         {
             sentencia.executeUpdate();
-            ResultSet keys = sentencia.getGeneratedKeys();
+                ResultSet keys = sentencia.getGeneratedKeys();
             int id = 0;
             while (keys.next()) 
             {

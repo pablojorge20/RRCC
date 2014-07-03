@@ -7,7 +7,6 @@
 package celepsa.rrcc.DA;
 
 import celepsa.rrcc.BE.TipoDocumentoBE;
-import celepsa.rrcc.DB.ConexionBD;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
