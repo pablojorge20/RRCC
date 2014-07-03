@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.DA;
+package celepsa.rrcc.da;
 
 import celepsa.rrcc.BE.PersonaBE;
 import celepsa.rrcc.DB.ConexionBD;

@@ -8,7 +8,7 @@ package celepsa.rrcc.BL;
 
 import celepsa.rrcc.BE.AdjuntoBE;
 import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.DA.DocumentoDA;
+import celepsa.rrcc.da.DocumentoDA;
 import java.util.List;
 
 /**

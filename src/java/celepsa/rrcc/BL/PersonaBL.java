@@ -7,7 +7,7 @@
 package celepsa.rrcc.BL;
 
 import celepsa.rrcc.BE.PersonaBE;
-import celepsa.rrcc.DA.PersonaDA;
+import celepsa.rrcc.da.PersonaDA;
 import java.util.List;
 
 /**

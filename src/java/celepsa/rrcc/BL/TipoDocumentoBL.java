@@ -7,7 +7,7 @@
 package celepsa.rrcc.BL;
 
 import celepsa.rrcc.BE.TipoDocumentoBE;
-import celepsa.rrcc.DA.TipoDocumentoDA;
+import celepsa.rrcc.da.TipoDocumentoDA;
 import java.util.List;
 
 /**

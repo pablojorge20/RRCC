@@ -9,7 +9,7 @@ package celepsa.rrcc.BL;
 
 import celepsa.rrcc.BE.DocumentoBE;
 import celepsa.rrcc.BE.StakeholderBE;
-import celepsa.rrcc.DA.StakeholderDA;
+import celepsa.rrcc.da.StakeholderDA;
 import java.util.List;
 
 /**
