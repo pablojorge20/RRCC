@@ -6,8 +6,8 @@
 
 package celepsa.rrcc.da;
 
-import celepsa.rrcc.DB.ConexionBD;
-import celepsa.rrcc.BE.TipoDocumentoBE;
+import celepsa.rrcc.bd.ConexionBD;
+import celepsa.rrcc.be.TipoDocumentoBE;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;

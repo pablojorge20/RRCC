@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BL;
+package celepsa.rrcc.bl;
 
 
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BE.StakeholderBE;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.be.StakeholderBE;
 import celepsa.rrcc.da.StakeholderDA;
 import java.util.List;
 

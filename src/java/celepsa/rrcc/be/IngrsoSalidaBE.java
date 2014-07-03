@@ -4,31 +4,16 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BE;
-
-import java.util.Date;
+package celepsa.rrcc.be;
 
 /**
  *
  * @author pmedina
  */
-public class TipoDocumentoBE {
-         private String id;
-    private String Descripcion;
+public class IngrsoSalidaBE {
+      private String id;
+    private String Descripcion;  
 
-    /**
-     * @return the id
-     */
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * @param id the id to set
-     */
-    public void setId(String id) {
-        this.id = id;
-    }
 
     /**
      * @return the Descripcion
@@ -44,5 +29,17 @@ public class TipoDocumentoBE {
         this.Descripcion = Descripcion;
     }
 
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
 
+    /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
 }

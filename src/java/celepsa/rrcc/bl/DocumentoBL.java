@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BL;
+package celepsa.rrcc.bl;
 
 import celepsa.rrcc.BE.AdjuntoBE;
 import celepsa.rrcc.BE.DocumentoBE;

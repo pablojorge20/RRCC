@@ -1,4 +1,4 @@
-package celepsa.rrcc.BE;
+package celepsa.rrcc.be;
 
 import java.util.Date;
 import java.util.List;

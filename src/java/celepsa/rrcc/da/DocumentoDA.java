@@ -6,14 +6,14 @@
 
 package celepsa.rrcc.da;
 
-import celepsa.rrcc.BE.AdjuntoBE;
-import celepsa.rrcc.BE.CriticidadBE;
-import celepsa.rrcc.BE.PersonaBE;
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BE.IngrsoSalidaBE;
-import celepsa.rrcc.BE.StakeholderBE;
-import celepsa.rrcc.BE.TipoDocumentoBE;
-import celepsa.rrcc.DB.ConexionBD;
+import celepsa.rrcc.be.AdjuntoBE;
+import celepsa.rrcc.be.CriticidadBE;
+import celepsa.rrcc.be.PersonaBE;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.be.IngrsoSalidaBE;
+import celepsa.rrcc.be.StakeholderBE;
+import celepsa.rrcc.be.TipoDocumentoBE;
+import celepsa.rrcc.bd.ConexionBD;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;

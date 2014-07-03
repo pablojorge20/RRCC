@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BE;
+package celepsa.rrcc.be;
 
 import java.util.Date;
 
@@ -12,9 +12,9 @@ import java.util.Date;
  *
  * @author pmedina
  */
-public class CriticidadBE {
-   private String id;
-    private String Descripcion; 
+public class TipoDocumentoBE {
+         private String id;
+    private String Descripcion;
 
     /**
      * @return the id
@@ -43,4 +43,6 @@ public class CriticidadBE {
     public void setDescripcion(String Descripcion) {
         this.Descripcion = Descripcion;
     }
+
+
 }

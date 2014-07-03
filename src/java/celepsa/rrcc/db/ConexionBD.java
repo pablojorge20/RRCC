@@ -1,4 +1,4 @@
-package celepsa.rrcc.DB;
+package celepsa.rrcc.bd;
 
 import celepsa.rrcc.encript.Encriptador;
 import java.io.FileInputStream;

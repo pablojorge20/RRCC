@@ -6,9 +6,9 @@
 
 package celepsa.rrcc.da;
 
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BE.StakeholderBE;
-import celepsa.rrcc.DB.ConexionBD;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.be.StakeholderBE;
+import celepsa.rrcc.bd.ConexionBD;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;

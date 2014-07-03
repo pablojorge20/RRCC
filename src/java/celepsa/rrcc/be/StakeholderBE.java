@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BE;
+package celepsa.rrcc.be;
 
 import java.util.Date;
 

@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BL;
+package celepsa.rrcc.bl;
 
-import celepsa.rrcc.BE.TipoDocumentoBE;
+import celepsa.rrcc.be.TipoDocumentoBE;
 import celepsa.rrcc.da.TipoDocumentoDA;
 import java.util.List;
 

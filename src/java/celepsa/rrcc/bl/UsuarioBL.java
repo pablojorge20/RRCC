@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package celepsa.rrcc.BL;
+package celepsa.rrcc.bl;
 
-import celepsa.rrcc.BE.UsuarioBE;
+import celepsa.rrcc.be.UsuarioBE;
 import java.util.Map;
 
 /**
