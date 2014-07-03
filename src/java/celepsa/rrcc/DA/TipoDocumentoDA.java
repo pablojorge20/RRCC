@@ -6,6 +6,7 @@
 
 package celepsa.rrcc.DA;
 
+import celepsa.rrcc.DB.ConexionBD;
 import celepsa.rrcc.BE.TipoDocumentoBE;
 import java.sql.ResultSet;
 import java.sql.SQLException;
