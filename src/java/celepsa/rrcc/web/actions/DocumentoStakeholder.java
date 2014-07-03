@@ -6,10 +6,10 @@
 
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BE.StakeholderBE;
-import celepsa.rrcc.BL.DocumentoBL;
-import celepsa.rrcc.BL.StakeholderBL;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.be.StakeholderBE;
+import celepsa.rrcc.bl.DocumentoBL;
+import celepsa.rrcc.bl.StakeholderBL;
 import static com.opensymphony.xwork2.Action.INPUT;
 import com.opensymphony.xwork2.Preparable;
 import java.util.List;

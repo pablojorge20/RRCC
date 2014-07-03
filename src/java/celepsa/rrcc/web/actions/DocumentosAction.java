@@ -5,14 +5,14 @@
  */
 
 package celepsa.rrcc.web.actions;
-import celepsa.rrcc.BE.CriticidadBE;
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BE.IngrsoSalidaBE;
-import celepsa.rrcc.BE.StakeholderBE;
-import celepsa.rrcc.BE.TipoDocumentoBE;
-import celepsa.rrcc.BL.DocumentoBL;
-import celepsa.rrcc.BL.StakeholderBL;
-import celepsa.rrcc.BL.TipoDocumentoBL;
+import celepsa.rrcc.be.CriticidadBE;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.be.IngrsoSalidaBE;
+import celepsa.rrcc.be.StakeholderBE;
+import celepsa.rrcc.be.TipoDocumentoBE;
+import celepsa.rrcc.bl.DocumentoBL;
+import celepsa.rrcc.bl.StakeholderBL;
+import celepsa.rrcc.bl.TipoDocumentoBL;
 import celepsa.rrcc.web.util.Messenger;
 import com.opensymphony.xwork2.Preparable;
 import java.util.ArrayList;

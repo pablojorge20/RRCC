@@ -52,9 +52,9 @@
             <div id="page-bgbtm">
                 
                   
-    <a href="/WebRRCC/welcome.action" ><img src="imagenes/botones/inicio.png" height="30" title="Incio del sistema"/></a>
-        <a href="/WebRRCC/DocumentosList.action" ><img src="imagenes/botones/documentos.png" height="30" title="Documentos"/></a>
-        <a href="/WebRRCC/StakePersonaList.action" ><img src="imagenes/botones/personas.png" height="30" title="Personas"/></a>
+    <a href="welcome.action" ><img src="imagenes/botones/inicio.png" height="30" title="Incio del sistema"/></a>
+        <a href="DocumentosList.action" ><img src="imagenes/botones/documentos.png" height="30" title="Documentos"/></a>
+        <a href="StakePersonaList.action" ><img src="imagenes/botones/personas.png" height="30" title="Personas"/></a>
         <a href="#" ><img src="imagenes/botones/agrupaciones.png" height="30" title="Agrupaciones"/></a>
         <a href="#" ><img src="imagenes/botones/eventos.png" height="30" title="Eventos"/></a>
         <a href="#" ><img src="imagenes/botones/proyectos.png" height="30" title="Proyectos"/></a>

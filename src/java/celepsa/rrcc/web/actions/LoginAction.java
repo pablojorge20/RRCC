@@ -1,7 +1,7 @@
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.UsuarioBE;
-import celepsa.rrcc.BL.UsuarioBL;
+import celepsa.rrcc.be.UsuarioBE;
+import celepsa.rrcc.bl.UsuarioBL;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.Preparable;
 import java.util.HashMap;

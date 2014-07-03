@@ -1,7 +1,7 @@
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.UsuarioBE;
-import celepsa.rrcc.BL.UsuarioBL;
+import celepsa.rrcc.be.UsuarioBE;
+import celepsa.rrcc.bl.UsuarioBL;
 import static com.opensymphony.xwork2.Action.INPUT;
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionContext;

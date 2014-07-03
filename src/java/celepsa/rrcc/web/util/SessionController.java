@@ -4,7 +4,7 @@
  */
 package celepsa.rrcc.web.util;
 
-import celepsa.rrcc.BE.UsuarioBE;
+import celepsa.rrcc.be.UsuarioBE;
 import com.opensymphony.xwork2.ActionContext;
 import java.util.Enumeration;
 import java.util.Map;

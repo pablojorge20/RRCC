@@ -6,8 +6,8 @@
 
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.PersonaBE;
-import celepsa.rrcc.BL.PersonaBL;
+import celepsa.rrcc.be.PersonaBE;
+import celepsa.rrcc.bl.PersonaBL;
 
 import com.opensymphony.xwork2.Preparable;
 import java.util.List;

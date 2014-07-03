@@ -1,6 +1,6 @@
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.UsuarioBE;
+import celepsa.rrcc.be.UsuarioBE;
 import com.opensymphony.xwork2.ActionSupport;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.interceptor.ServletRequestAware;

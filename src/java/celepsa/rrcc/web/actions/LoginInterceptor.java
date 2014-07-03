@@ -1,8 +1,8 @@
 package celepsa.rrcc.web.actions;
 
 
-import celepsa.rrcc.BE.UsuarioBE;
-import celepsa.rrcc.BL.UsuarioBL;
+import celepsa.rrcc.be.UsuarioBE;
+import celepsa.rrcc.bl.UsuarioBL;
 import javax.servlet.http.HttpServletRequest;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;

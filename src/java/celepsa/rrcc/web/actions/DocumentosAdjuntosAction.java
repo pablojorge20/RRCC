@@ -6,9 +6,9 @@
 
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.AdjuntoBE;
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BL.DocumentoBL;
+import celepsa.rrcc.be.AdjuntoBE;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.bl.DocumentoBL;
 import celepsa.rrcc.web.util.Funciones;
 import static com.opensymphony.xwork2.Action.INPUT;
 import com.opensymphony.xwork2.Preparable;

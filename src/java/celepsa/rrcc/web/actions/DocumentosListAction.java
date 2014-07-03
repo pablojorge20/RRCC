@@ -6,9 +6,9 @@
 
 package celepsa.rrcc.web.actions;
 
-import celepsa.rrcc.BE.CriticidadBE;
-import celepsa.rrcc.BE.DocumentoBE;
-import celepsa.rrcc.BL.DocumentoBL;
+import celepsa.rrcc.be.CriticidadBE;
+import celepsa.rrcc.be.DocumentoBE;
+import celepsa.rrcc.bl.DocumentoBL;
 import celepsa.rrcc.web.util.Messenger;
 import com.opensymphony.xwork2.Preparable;
 import java.util.ArrayList;
