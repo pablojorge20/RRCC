@@ -6,16 +6,14 @@
 
 package celepsa.rrcc.be;
 
-import java.util.Date;
-
 /**
  *
  * @author pmedina
  */
-public class TipoDocumentoBE {
+public class NivelInfluenciaBE {
     private String id;
     private String Descripcion;
-    private String est;
+    private String est;  
 
     /**
      * @return the id
@@ -58,6 +56,4 @@ public class TipoDocumentoBE {
     public void setEst(String est) {
         this.est = est;
     }
-
-
 }

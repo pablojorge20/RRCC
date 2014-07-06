@@ -20,5 +20,10 @@ public class PersonaBL {
            
         PersonaDA objSistemaDA = new PersonaDA();
         return objSistemaDA.listarPersona(pAg);
-    }     
+    }    
+     public PersonaBE obtenerPersona(PersonaBE objPersona) throws Exception
+    {
+        PersonaDA objPersonaDA = new PersonaDA();
+        return objPersonaDA.obtenerPersona(objPersona);
+    }  
 }

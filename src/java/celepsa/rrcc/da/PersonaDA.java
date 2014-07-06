@@ -8,6 +8,8 @@ package celepsa.rrcc.da;
 
 import celepsa.rrcc.be.PersonaBE;
 import celepsa.rrcc.bd.ConexionBD;
+import celepsa.rrcc.be.NivelInfluenciaBE;
+import celepsa.rrcc.be.TipoDocumentoIdentidadBE;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -45,7 +47,7 @@ public class PersonaDA {
             {
                 while (objResult.next()) 
                 {
-                    lstRetorno.add(populatePersona(objResult));
+                    lstRetorno.add(populatePersonaVarios(objResult));
                 }
             } 
             return lstRetorno;
@@ -61,13 +63,72 @@ public class PersonaDA {
         }
     } 
    
-   private PersonaBE populatePersona(ResultSet resultado) throws SQLException {
+   private PersonaBE populatePersonaVarios(ResultSet resultado) throws SQLException {
         PersonaBE objPersonaBE = new PersonaBE();
 
         objPersonaBE.setId(resultado.getString("id"));
         
         objPersonaBE.setNombre(resultado.getString("nombre"));
 
+        return objPersonaBE;
+    }
+   
+   public PersonaBE obtenerPersona(PersonaBE objPersona) throws Exception  {
+        ConexionBD objConexion = null;
+        int cont = 1;
+        try 
+        {
+            objConexion = new ConexionBD();
+            PersonaBE objDocumentoResult = null;
+            String sQuery = " SELECT  * FROM RRHH.tmStakePersona WHERE id = ? ";
+            objConexion.open();
+            objConexion.prepararSentencia(sQuery);
+            objConexion.agregarParametro(cont++, objPersona.getId());
+
+            ResultSet objResult = objConexion.ejecutarQuery();
+            if (objResult != null) 
+            {
+                if (objResult.next()) 
+                {
+                    objDocumentoResult = this.populatePersona(objResult);
+                }
+            } 
+            return objDocumentoResult;
+        } 
+        catch (Exception e) 
+        {
+            System.out.println(e.getMessage());
+            throw e;
+        } 
+        finally 
+        {
+            objConexion.close();
+        }
+    }
+   
+    private PersonaBE populatePersona(ResultSet resultado) throws SQLException {
+        PersonaBE objPersonaBE = new PersonaBE();
+        
+        NivelInfluenciaBE objNivelInfluenciaBE = new NivelInfluenciaBE();
+        TipoDocumentoIdentidadBE objTipoDocumentoIdentidadBE = new TipoDocumentoIdentidadBE();
+        
+        objPersonaBE.setId(resultado.getString("id"));
+        objPersonaBE.setFechaRegistro(resultado.getString("FechaRegistro")); 
+        objPersonaBE.setNombre(resultado.getString("Nombre")); 
+        objPersonaBE.setApellido(resultado.getString("Apellido")); 
+        objPersonaBE.setAlias(resultado.getString("Alias")); 
+        objPersonaBE.setIdentidad(resultado.getString("Identidad")); 
+        objPersonaBE.setNroDocumento(resultado.getString("NroDocumento")); 
+        objPersonaBE.setFotografia(resultado.getString("Fotografia"));
+        
+        objTipoDocumentoIdentidadBE.setId(resultado.getString("tmTDocumento"));
+        objPersonaBE.setTDoumentoIdentidad(objTipoDocumentoIdentidadBE);;
+        
+        objNivelInfluenciaBE.setId(resultado.getString("tmNivelInfluencia"));
+        objPersonaBE.setNivelInfluencia(objNivelInfluenciaBE);;
+        
+        
+        
         return objPersonaBE;
     }
 }

@@ -40,85 +40,49 @@
 					<div class="form_description">
 			 <br>&nbsp;&nbsp;<s:text name="Usted esta en :"/>
     <strong>
-       Documentos
+       Stakeholder - Personas
     </strong>
        
     <br>
-                        <s:hidden name="documento.id" value="%{documento.id}" theme="simple"/>    
+                        <s:hidden name="Persona.id" value="%{Persona.id}" theme="simple"/>    
 		</div>						
 			<ul >
 					
 		<label class="description" for="element_1">Fecha Registro </label>
 		<span>
 			
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 <s:textfield name="documento.fechaRegistro" value="%{documento.fechaRegistro}" size="15" maxLength="10" theme="simple"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 <s:textfield name="Persona.FechaRegistro" value="%{persona.FechaRegistro}" size="15" maxLength="10" theme="simple"/>
               
 		 
 		<br>
-		<label class="description" for="element_2">Fecha recepcion </label>
+		<label class="description" for="element_2">Nombre </label>
 		<span>
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <s:textfield name="documento.fechaRecepcion" value="%{documento.fechaRecepcion}" size="15" maxLength="10" theme="simple"/>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <s:textfield name="Persona.Nombre" value="%{Persona.Nombre}" size="15" maxLength="10" theme="simple"/>
+			
+			
+		</span>
+		<br>
+		<label class="description" for="element_2">Apellido </label>
+		<span>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <s:textfield name="Persona.Apellido" value="%{Persona.Apellido}" size="15" maxLength="10" theme="simple"/>
+			
+			
+		</span>
+		 <br>
+		<label class="description" for="element_2">Alias </label>
+		<span>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <s:textfield name="Persona.Alias" value="%{Persona.Alias}" size="15" maxLength="10" theme="simple"/>
 			
 			
 		</span>
 		
-		 
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<label class="description" for="element_5">Tipo Documentos </label>
-		&nbsp;&nbsp;&nbsp;
-	<s:select  list="LTipo"
+		<label class="description" for="element_8">Nivel Influencia </label>
+		<div>
+	  <s:select  list="LNinfluencia"
                                    listKey="id"
                                    listValue="Descripcion"
-                                   name="documento.tipoDocumento.id"
-                                   value="%{documento.tipoDocumento.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-	
-		
-		<br><label class="description" for="element_6">Remitente </label>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	  <s:select  list="LRemitente"
-                                   listKey="id"
-                                   listValue="Nombre"
-                                   name="documento.stakeholder.id"
-                                   value="%{documento.stakeholder.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-		
-		<br>
-		<label class="description" for="element_3">Observaciones </label>
-		<div>
-                     <s:textfield name="documento.observaciones" value="%{documento.observaciones}" size="50" maxLength="100" theme="simple"/>
-			
-		</div> 
-		
-		<label class="description" for="element_4">Asunto </label>
-		<div>
-                    <s:textfield name="documento.asunto" value="%{documento.asunto}" size="50" maxLength="100" theme="simple"/>
-		
-		</div> 
-		
-		<label class="description" for="element_7">Ingreso/Salida </label>
-		<div>
-	  <s:select  list="LIngreso"
-                                   listKey="id"
-                                   listValue="Descripcion"
-                                   name="documento.ingreso.id"
-                                   value="%{documento.ingreso.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-		</div> 
-		
-		<label class="description" for="element_8">Criticidad </label>
-		<div>
-	  <s:select  list="LCriticidad"
-                                   listKey="id"
-                                   listValue="Descripcion"
-                                   name="documento.criticidad.id"
-                                   value="%{documento.criticidad.id}"
+                                   name="Persona.NivelInfluencia.id"
+                                   value="%{Persona.NivelInfluencia.id}"
                                  
                                    theme="simple"
                                    cssClass="texto"/>  
@@ -133,64 +97,43 @@
 
 <TD WIDTH=200>
     		
-		<label class="description" for="element_1">Fecha Caducidad </label>
+		<label class="description" for="element_1">Identidad </label>
                             <span>
 			
-                        <s:textfield name="documento.fechaCaducidad" value="%{documento.fechaCaducidad}" size="50" maxLength="100" theme="simple"/>    
+                        <s:textfield name="Persona.Identidad" value="%{Persona.Identidad}" size="50" maxLength="100" theme="simple"/>    
                             </span>  
                 <div>
 <label class="description" for="element_1">Relacionado a: </label>
 </div>
         
-		<label class="description" for="element_5">Convenio </label>
-		<div>
-  <s:select  list="LConvenio"
-                                   listKey="id"
-                                   listValue="Asunto"
-                                   name="documento.convenio.id"
-                                   value="%{documento.convenio.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-		</div> 
+
               
-		<label class="description" for="element_5">Programa </label>
+		<label class="description" for="element_5">Tipo de Documento </label>
+		
 		<div>
-		<div>
-  <s:select  list="LPrograma"
+  <s:select  list="LTipo"
                                    listKey="id"
-                                   listValue="Asunto"
-                                   name="documento.programa.id"
-                                   value="%{documento.programa.id}"
+                                   listValue="Descripcion"
+                                   name="Persona.TDoumentoIdentidad.id"
+                                   value="%{Persona.TDoumentoIdentidad.id}"
                                  
                                    theme="simple"
                                    cssClass="texto"/>  
 		</div> 
-                
-		<label class="description" for="element_5">Proyecto </label>
-		<div>
-<s:select  list="LProyecto"
-                                   listKey="id"
-                                   listValue="Asunto"
-                                   name="documento.proyecto.id"
-                                   value="%{documento.proyecto.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-		</div> 
+                		 <br>
+		<label class="description" for="element_2">Nro Documento </label>
+		<span>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <s:textfield name="Persona.NroDocumento" value="%{Persona.NroDocumento}" size="15" maxLength="10" theme="simple"/>
+			
+			
+		</span>
                 
                 
-		<label class="description" for="element_5">Documento </label>
-		<div>
-<s:select  list="LDocumento"
-                                   listKey="id"
-                                   listValue="Asunto"
-                                   name="documento.documento.id"
-                                   value="%{documento.documento.id}"
-                                 
-                                   theme="simple"
-                                   cssClass="texto"/>  
-		</div> 
+                
+                
+
+                
+              
        
 </TD>
                 
@@ -208,9 +151,6 @@
         </TD>
         
             <TD WIDTH=100>
-           <a href="/WebRRCC/StakeholderDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Stakeholder &nbsp;&nbsp;<img src="imagenes/stakeholder.png" height="20" title="Documentos"/></a>        
-           <BR>
-<a href="/WebRRCC/AdjuntosDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Adjuntos &nbsp;&nbsp;<img src="imagenes/aprobar.png" height="20" title="Documentos"/></a>             
      
 	
         </TD>

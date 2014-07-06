@@ -208,9 +208,9 @@
         </TD>
         
             <TD WIDTH=100>
-           <a href="/WebRRCC/StakeholderDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Stakeholder &nbsp;&nbsp;<img src="imagenes/stakeholder.png" height="20" title="Documentos"/></a>        
+           <a href="StakeholderDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Stakeholder &nbsp;&nbsp;<img src="imagenes/stakeholder.png" height="20" title="Documentos"/></a>        
            <BR>
-<a href="/WebRRCC/AdjuntosDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Adjuntos &nbsp;&nbsp;<img src="imagenes/aprobar.png" height="20" title="Documentos"/></a>             
+<a href="AdjuntosDoc.action?documento.id=<s:property value="%{documento.id}"/>">Hacer click para añadir Adjuntos &nbsp;&nbsp;<img src="imagenes/aprobar.png" height="20" title="Documentos"/></a>             
      
 	
         </TD>

@@ -22,6 +22,12 @@
             <result name="login" type="redirectAction">login</result>
             <result name="error">/WEB-INF/jsp/error.jsp</result>
         </action>
+      <action name="Personas" class="celepsa.rrcc.web.actions.StakePersonaAction" method="obtenerStakePersona">
+            <result name="success" type="redirectAction">${accion}</result>          
+            <result name="input">/WEB-INF/jsp/StakePersona.jsp</result>
+            <result name="login"  type="redirectAction">w</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
 
     </package>
 </struts>

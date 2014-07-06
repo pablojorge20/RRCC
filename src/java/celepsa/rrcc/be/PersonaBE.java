@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package celepsa.rrcc.be;
 
 /**
  *
  * @author pmedina
  */
-public class PersonaBE  extends StakeholderBE{
-     private String Apellido;
-     private String Alias;
-     private String NroDocumento;  
+public class PersonaBE extends StakeholderBE {
+
+    private String Apellido;
+    private String Alias;
+    private String NroDocumento;
+    private TipoDocumentoIdentidadBE TDoumentoIdentidad;
 
     /**
      * @return the Apellido
@@ -55,5 +56,21 @@ public class PersonaBE  extends StakeholderBE{
      */
     public void setNroDocumento(String NroDocumento) {
         this.NroDocumento = NroDocumento;
+    }
+
+
+
+    /**
+     * @return the TDoumentoIdentidad
+     */
+    public TipoDocumentoIdentidadBE getTDoumentoIdentidad() {
+        return TDoumentoIdentidad;
+    }
+
+    /**
+     * @param TDoumentoIdentidad the TDoumentoIdentidad to set
+     */
+    public void setTDoumentoIdentidad(TipoDocumentoIdentidadBE TDoumentoIdentidad) {
+        this.TDoumentoIdentidad = TDoumentoIdentidad;
     }
 }

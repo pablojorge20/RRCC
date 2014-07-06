@@ -14,10 +14,11 @@ import java.util.Date;
  */
 public class StakeholderBE {
      private String id;
-    private Date FechaRegistro;
+    private String FechaRegistro;
     private String Nombre;
-    private String NivelInfluencia;  
+    private NivelInfluenciaBE NivelInfluencia;  
     private String Identidad;
+    private String Fotografia;
 
     /**
      * @return the id
@@ -33,33 +34,8 @@ public class StakeholderBE {
         this.id = id;
     }
 
-    /**
-     * @return the FechaRegistro
-     */
-    public Date getFechaRegistro() {
-        return FechaRegistro;
-    }
 
-    /**
-     * @param FechaRegistro the FechaRegistro to set
-     */
-    public void setFechaRegistro(Date FechaRegistro) {
-        this.FechaRegistro = FechaRegistro;
-    }
 
-    /**
-     * @return the NivelInfluencia
-     */
-    public String getNivelInfluencia() {
-        return NivelInfluencia;
-    }
-
-    /**
-     * @param NivelInfluencia the NivelInfluencia to set
-     */
-    public void setNivelInfluencia(String NivelInfluencia) {
-        this.NivelInfluencia = NivelInfluencia;
-    }
 
     /**
      * @return the Identidad
@@ -87,5 +63,47 @@ public class StakeholderBE {
      */
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
+    }
+
+    /**
+     * @return the NivelInfluencia
+     */
+    public NivelInfluenciaBE getNivelInfluencia() {
+        return NivelInfluencia;
+    }
+
+    /**
+     * @param NivelInfluencia the NivelInfluencia to set
+     */
+    public void setNivelInfluencia(NivelInfluenciaBE NivelInfluencia) {
+        this.NivelInfluencia = NivelInfluencia;
+    }
+
+    /**
+     * @return the FechaRegistro
+     */
+    public String getFechaRegistro() {
+        return FechaRegistro;
+    }
+
+    /**
+     * @param FechaRegistro the FechaRegistro to set
+     */
+    public void setFechaRegistro(String FechaRegistro) {
+        this.FechaRegistro = FechaRegistro;
+    }
+
+    /**
+     * @return the Fotografia
+     */
+    public String getFotografia() {
+        return Fotografia;
+    }
+
+    /**
+     * @param Fotografia the Fotografia to set
+     */
+    public void setFotografia(String Fotografia) {
+        this.Fotografia = Fotografia;
     }
 }
